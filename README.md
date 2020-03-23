@@ -52,16 +52,16 @@ This final file look like this:
 You now should edit the code, open `hello.cc`, now you can use code completion and navigation
 
 code auto completion
-![](docs\auto_complete.png)
+![](docs/auto_complete.png)
 
 code navigation
-![](docs\goto_implementation.png)
+![](docs/goto_implementation.png)
 
 ## Debug
 Debug plugin relies [vscode-lldb](https://github.com/vadimcn/vscode-lldb)
 
 Press F5, and choose `LLDB` in prompt
-![](docs\lldb_debug.png)
+![](docs/lldb_debug.png)
 
 After generated config (location in `.vscode/launch.json`), edit `program` and `args` part.
 
@@ -83,7 +83,7 @@ This final config looks like this
 ```
 Then set breakpoint in `hello.cc`, then print `F5` again. You should see something like this
 
-![](docs\debug_process.png)
+![](docs/debug_process.png)
 
 You may notice the variable `s` value information is not helpful. It's a `v8::Value`,
 we are working on it to make it more informative.
