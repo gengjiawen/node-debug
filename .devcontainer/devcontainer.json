@@ -1,0 +1,31 @@
+{
+    "name": "Node.js Sample",
+    "dockerFile": "Dockerfile",
+
+    // Use 'appPort' to create a container with published ports. If the port isn't working, be sure
+    // your server accepts connections from all interfaces (0.0.0.0 or '*'), not just localhost.
+    // "appPort": [3000],
+
+    // Comment out the next line to run as root instead.
+    "remoteUser": "root",
+
+    // Uncomment when using a ptrace-based debugger like C++, Go, and Rust
+    "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
+
+
+    // Use 'settings' to set *default* container specific settings.json values on container create. 
+    // You can edit these settings after create using File > Preferences > Settings > Remote.
+    "settings": {
+        "terminal.integrated.shell.linux": "/usr/bin/fish"
+    },
+
+    // Specifies a command that should be run after the container has been created.
+    "postCreateCommand": "yarn && node-gyp --debug configure rebuild",
+
+    // Add the IDs of extensions you want installed when the container is created.
+    "extensions": [
+		"ms-vscode.cpptools",
+		"vadimcn.vscode-lldb",
+		"visualstudioexptteam.vscodeintellicode"
+	],
+}
