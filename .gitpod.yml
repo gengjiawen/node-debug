@@ -1,2 +1,1 @@
-tasks:
-  - init: yarn install
+image: gengjiawen/node-build
