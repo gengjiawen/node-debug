@@ -5,8 +5,7 @@ tasks:
 
 vscode:
   extensions:
-    - vadimcn.vscode-lldb@1.5.3:vTh/rWhvJ5nQpeAVsD20QA==
-
+    - vadimcn.vscode-lldb@1.6.0:TlOEY068MsoPv6/D7EZlLg==
 
 # lldb init
 # command script import /home/gitpod/lldb_commands.py
