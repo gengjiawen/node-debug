@@ -106,3 +106,4 @@ and inspirations.
 * https://medium.com/fhinkel/debug-v8-in-node-js-core-with-gdb-cc753f1f32
 * https://github.com/bnoordhuis/v8-cmake/pull/8
 * https://github.com/Microsoft/vscode-remote-try-node
+* https://github.com/nodejs/node/issues/32402
