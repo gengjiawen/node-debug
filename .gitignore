@@ -9,4 +9,5 @@ npm-debug.log*
 
 .idea/
 .vscode/
+.theia/
 .DS_Store

@@ -1,5 +1,12 @@
 image: gengjiawen/node-build
 
+tasks:
+  - init: yarn && node-gyp --debug configure rebuild
+
 vscode:
   extensions:
     - vadimcn.vscode-lldb@1.5.3:vTh/rWhvJ5nQpeAVsD20QA==
+
+
+# lldb init
+# command script import /home/gitpod/lldb_commands.py
