@@ -1,11 +1,11 @@
-image: gengjiawen/node-build
+image: gitpod/workspace-wasm:latest
 
 tasks:
-  - init: yarn && node-gyp --debug configure rebuild
+  - init: npm i -g @gengjiawen/node-dev && node-dev setuplldb && node-gyp --debug configure rebuild
 
 vscode:
   extensions:
-    - vadimcn.vscode-lldb@1.6.0:TlOEY068MsoPv6/D7EZlLg==
+    - vadimcn.vscode-lldb
 
 # lldb init
 # command script import /home/gitpod/lldb_commands.py
