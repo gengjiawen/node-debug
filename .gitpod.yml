@@ -1,7 +1,7 @@
 image: gitpod/workspace-full:latest
 
 tasks:
-  - init: nvm install node && npm i -g @gengjiawen/node-dev && node-dev setuplldb && yarn
+  - init: npm i -g @gengjiawen/node-dev && node-dev setuplldb && yarn
     command: node-gyp --debug configure rebuild
 
 vscode:
